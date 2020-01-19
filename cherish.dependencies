@@ -41,4 +41,10 @@
     "target_path": "packages_apps_GCam",
     "branch": "master"
   },
+  {
+    "repository": "vendor_xiaomi-firmware",
+    "target_path": "vendor/xiaomi-firmware",
+    "branch":"eleven",
+    "remote":"pixel-devices-blobs"
+   }
   ]
