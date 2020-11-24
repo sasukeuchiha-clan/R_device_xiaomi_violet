@@ -32,4 +32,7 @@
 
     <!-- Enable vibrate for calls by default -->
     <bool name="def_vibrate_when_ringing">true</bool>
+
+    <!-- Default screen brightness, from 0 to 255. 78 is 30%. -->
+    <integer name="def_screen_brightness">78</integer>
 </resources>
