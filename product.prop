@@ -27,6 +27,7 @@ ro.surface_flinger.protected_contents=true
 ro.surface_flinger.use_color_management=true
 ro.surface_flinger.wcg_composition_dataspace=143261696
 debug.hwui.renderer=skiagl
+debug.cpurend.vsync=false
 
 # Incremental FS
 ro.incremental.enable=1
