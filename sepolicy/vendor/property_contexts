@@ -56,3 +56,7 @@ persist.sys.thermal.config u:object_r:thermal_normal_prop:s0
 
 # Touchfeature
 ro.vendor.touchfeature.type              u:object_r:vendor_touchfeature_prop:s0
+
+# Accent Picker
+persist.sys.theme.accentcolor                 u:object_r:theme_prop:s0
+persist.sys.theme.gradientcolor               u:object_r:theme_prop:s0
