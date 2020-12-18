@@ -579,4 +579,10 @@
 
     <!-- Whether the device supports Smart Pixels -->
     <bool name="config_enableSmartPixels">true</bool>
+	
+    <!-- Show a custom view for FOD -->
+    <bool name="config_needCustomFODView">false</bool>
+
+    <!-- Shows the required view for in-display fingerprint -->
+    <bool name="config_supportsInDisplayFingerprint">false</bool>
 </resources>
