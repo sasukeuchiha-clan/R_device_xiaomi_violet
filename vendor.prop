@@ -130,6 +130,10 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
 
+# Fling Velocity
+ro.min.fling_velocity=160
+ro.max.fling_velocity=20000
+
 # Graphics
 debug.egl.hw=0
 debug.hwui.renderer=skiavk
