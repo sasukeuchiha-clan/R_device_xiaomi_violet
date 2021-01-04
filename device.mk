@@ -489,3 +489,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 #EnableBlur
 TARGET_USES_BLUR := true
+
+# GvisualMod
+PRODUCT_PACKAGES += \
+    G-UIRadiusAndroid \
+    G-UIRadiusSystemUI \
+    G-UIStatusbarHeight
