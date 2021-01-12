@@ -37,6 +37,12 @@ PRODUCT_CHARACTERISTICS := nosdcard
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
+# HALs
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/qcom-caf/sm8150/display \
+    hardware/qcom-caf/sm8150/media \
+    hardware/qcom-caf/sm8150/audio
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
@@ -496,3 +502,8 @@ PRODUCT_PACKAGES += \
     G-UIRadiusAndroid \
     G-UIRadiusSystemUI \
     G-UIStatusbarHeight
+
+# Board(QCOM)
+PRODUCT_BOARD_PLATFORM := sm6150
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
