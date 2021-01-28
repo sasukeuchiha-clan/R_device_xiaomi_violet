@@ -1,0 +1,38 @@
+[
+  {
+    "remote": "OctaviOS-Devices",
+    "repository": "vendor_xiaomi_violet ",
+    "target_path": "vendor/xiaomi",
+    "branch": "eleven-stable"
+  },
+  {
+    "remote": "OctaviOS-Devices",
+    "repository": "device_xiaomi_violet",
+    "target_path": "device/xiaomi/violet",
+    "branch": "eleven-stable"
+  },
+  {
+   "remote": "ArrowOS",
+   "repository": "android_hardware_qcom_display",
+   "target_path": "hardware/qcom-caf/sm8150/display",
+   "branch": "arrow-11.0-caf-sm8150"
+  },
+  {
+   "remote": "ArrowOS",
+   "repository": "android_hardware_qcom_audio",
+   "target_path": "hardware/qcom-caf/sm8150/audio",
+   "branch": "arrow-11.0-caf-sm8150"
+  },
+  {
+   "remote": "ArrowOS",
+   "repository": "android_hardware_qcom_media",
+   "target_path": "hardware/qcom-caf/sm8150/media",
+   "branch": "arrow-11.0-caf-sm8150"
+  },
+  {
+    "remote": "ArrowOS",
+    "repository": "android_device_qcom_sepolicy",
+    "target_path": "device/qcom/sepolicy",
+    "branch": "arrow-11.0"
+  },
+  ]
