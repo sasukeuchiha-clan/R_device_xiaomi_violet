@@ -1,15 +1,15 @@
 [
   {
-    "remote": "OctaviOS-Devices",
-    "repository": "vendor_xiaomi_violet ",
+    "remote": "karthik558",
+    "repository": "vendor_xiaomi_violet.",
     "target_path": "vendor/xiaomi",
-    "branch": "eleven-stable"
+    "branch": "11"
   },
   {
-    "remote": "OctaviOS-Devices",
-    "repository": "device_xiaomi_violet",
+    "remote": "karthik558",
+    "repository": "device_xiaomi_violet.",
     "target_path": "device/xiaomi/violet",
-    "branch": "eleven-stable"
+    "branch": "11"
   },
   {
    "remote": "ArrowOS",
@@ -30,9 +30,9 @@
    "branch": "arrow-11.0-caf-sm8150"
   },
   {
-    "remote": "ArrowOS",
-    "repository": "android_device_qcom_sepolicy",
-    "target_path": "device/qcom/sepolicy",
-    "branch": "arrow-11.0"
+    "remote": "karthik558",
+    "repository": "MsM-4.14-SmoothAF",
+    "target_path": kernel/xiaomi/violet",
+    "branch": "eleven"
   },
   ]
