@@ -521,11 +521,6 @@
         <item>3</item>
     </integer-array>
 
-    <!-- Smart charge sysfs node and value for suspend/resume charging-->
-    <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/input_suspend</string>
-    <string name="config_SmartChargingSupspendValue" translatable="false">1</string>
-    <string name="config_SmartChargingResumeValue" translatable="false">0</string>
-
     <!-- Whether we have a multi coloured battery LED or not -->
     <bool name="config_multiColorBatteryLed">false</bool>
     
@@ -558,9 +553,8 @@
 
     <!-- Smart charging -->
     <bool name="config_smartChargingAvailable">true</bool>
-    <string name="config_smartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/input_suspend</string>
-    <string name="config_smartChargingSuspendValue" translatable="false">1</string>
-    <string name="config_smartChargingResumeValue" translatable="false">0</string>
+    <string name="config_sysBatteryTemp">/sys/class/power_supply/battery/temp</string>
+    <integer name="config_sysBatteryTempMultiplier">10</integer>
 
     <!-- Enables or disables haptic effect when the text insertion/selection handle is moved
          manually by the user. Off by default, since the expected haptic feedback may not be
