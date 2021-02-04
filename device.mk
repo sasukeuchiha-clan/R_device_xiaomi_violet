@@ -495,8 +495,7 @@ TARGET_USES_BLUR := true
 # GvisualMod
 PRODUCT_PACKAGES += \
     G-UIRadiusAndroid \
-    G-UIRadiusSystemUI \
-    G-UIStatusbarHeight
+    G-UIRadiusSystemUI
 
 # Board(QCOM)
 PRODUCT_BOARD_PLATFORM := sm6150
