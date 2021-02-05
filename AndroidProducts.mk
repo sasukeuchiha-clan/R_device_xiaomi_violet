@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/octavi_violet.mk
+    $(LOCAL_DIR)/cherish_violet.mk
 
 COMMON_LUNCH_CHOICES := \
-    octavi_violet-userdebug \
-    octavi_violet-user \
-    octavi_violet-eng
+    cherish_violet-userdebug \
+    cherish_violet-user \
+    cherish_violet-eng
