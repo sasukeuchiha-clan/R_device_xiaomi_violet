@@ -14,9 +14,9 @@
 // limitations under the License.
 
 android_app_import {
-	name: "CameraGo",
+	name: "GCam",
 	owner: "google",
-	apk: "CameraGo/CameraGo.apk",
+	apk: "GCam/GCam.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
