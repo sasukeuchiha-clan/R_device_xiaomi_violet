@@ -31,3 +31,7 @@ get_prop(system_app, vendor_default_prop)
 
 # USB Fastcharge
 allow system_app sysfs:file { getattr open read write };
+
+# Spectrum
+allow system_app spectrum_prop:property_service set;
+get_prop(system_app, spectrum_prop);
