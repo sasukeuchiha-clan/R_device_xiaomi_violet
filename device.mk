@@ -461,7 +461,9 @@ PRODUCT_COPY_FILES += \
 #VioletParts init
 PRODUCT_PACKAGES += \
     init.violetparts.sh \
-    init.violetparts.rc
+    init.violetparts.rc \
+    init.spectrum.sh \
+    init.spectrum.rc
 
 # Wifi
 PRODUCT_PACKAGES += \

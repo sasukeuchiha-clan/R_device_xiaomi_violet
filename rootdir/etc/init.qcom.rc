@@ -29,6 +29,7 @@ import /vendor/etc/init/hw/init.power.rc
 import /vendor/etc/init/hw/init.qcom.usb.rc
 import /vendor/etc/init/hw/init.target.rc
 import /vendor/etc/init/hw/init.violetparts.rc
+import init.spectrum.rc
 
 on early-init
     # Disable EAS
