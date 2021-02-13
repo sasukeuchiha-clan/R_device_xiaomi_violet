@@ -508,11 +508,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #EnableBlur
 TARGET_USES_BLUR := true
 
-# GvisualMod
-PRODUCT_PACKAGES += \
-    G-UIRadiusAndroid \
-    G-UIRadiusSystemUI
-
 # Board(QCOM)
 PRODUCT_BOARD_PLATFORM := sm6150
 PRODUCT_USES_QCOM_HARDWARE := true
