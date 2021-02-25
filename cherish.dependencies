@@ -35,4 +35,10 @@
     "target_path": kernel/xiaomi/violet",
     "branch": "eleven"
   },
+  {
+    "remote": "karthik5581",
+    "repository": "packages_apps_Gcam",
+    "target_path": "packages_apps_GCam",
+    "branch": "master"
+  },
   ]
