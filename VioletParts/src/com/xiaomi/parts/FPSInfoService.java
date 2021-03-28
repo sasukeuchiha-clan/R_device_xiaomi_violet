@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2020 The Xiaomi-SM6250 Project
+ * Copyright (C) 2019 The OmniROM Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.xiaomi.parts;
+package com.redmi.xiaomiparts;
 
 import android.app.Service;
 import android.content.BroadcastReceiver;
@@ -57,7 +57,7 @@ public class FPSInfoService extends Service {
     private final String TAG = "FPSInfoService";
     private String mFps = null;
 
-    private static final String MEASURED_FPS = "/sys/class/drm/sde-crtc-0/measured_fps";
+    private static final String MEASURED_FPS = "/sys/module/primary_display/parameters/display_framerate_main";
 
     private IDreamManager mDreamManager;
 
@@ -92,24 +92,24 @@ public class FPSInfoService extends Service {
             float density = c.getResources().getDisplayMetrics().density;
             int paddingPx = Math.round(5 * density);
             setPadding(paddingPx, paddingPx, paddingPx, paddingPx);
-            setBackgroundColor(Color.argb(0x0, 0, 0, 0));
+            setBackgroundColor(Color.argb(0x60, 0, 0, 0));
 
-            final int textSize = Math.round(17 * density);
+            final int textSize = Math.round(12 * density);
 
-            Typeface typeface = Typeface.create("monospace", Typeface.NORMAL);
+            Typeface typeface = Typeface.create("sans-serif-condensed", Typeface.BOLD);
 
             mOnlinePaint = new Paint();
             mOnlinePaint.setTypeface(typeface);
             mOnlinePaint.setAntiAlias(true);
             mOnlinePaint.setTextSize(textSize);
             mOnlinePaint.setColor(Color.WHITE);
-            mOnlinePaint.setShadowLayer(8.0f, 0.0f, 0.0f, Color.BLACK);
+            mOnlinePaint.setShadowLayer(5.0f, 0.0f, 0.0f, Color.BLACK);
 
             mAscent = mOnlinePaint.ascent();
             float descent = mOnlinePaint.descent();
             mFH = (int)(descent - mAscent + .5f);
 
-            final String maxWidthStr="fps: 66.1";
+            final String maxWidthStr="60.1";
             mMaxWidth = (int)mOnlinePaint.measureText(maxWidthStr);
 
             updateDisplay();
@@ -195,7 +195,7 @@ public class FPSInfoService extends Service {
         public void run() {
             try {
                 while (!mInterrupt) {
-                    sleep(500);
+                    sleep(1000);
                     StringBuffer sb=new StringBuffer();
                     String fpsVal = FPSInfoService.readOneLine(MEASURED_FPS);
                     mHandler.sendMessage(mHandler.obtainMessage(1, fpsVal));
@@ -218,7 +218,8 @@ public class FPSInfoService extends Service {
             WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE|
             WindowManager.LayoutParams.FLAG_NOT_TOUCHABLE,
             PixelFormat.TRANSLUCENT);
-        params.gravity = Gravity.RIGHT | Gravity.TOP;
+        params.y = 50;
+	params.gravity = Gravity.LEFT | Gravity.TOP;
         params.setTitle("FPS Info");
 
         startThread();
@@ -281,13 +282,6 @@ public class FPSInfoService extends Service {
     };
 
     private boolean isDozeMode() {
-        try {
-            if (mDreamManager != null && mDreamManager.isDreaming()) {
-                return true;
-            }
-        } catch (RemoteException e) {
-            return false;
-        }
         return false;
     }
 
